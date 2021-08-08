@@ -1,11 +1,11 @@
 import React from "react"
 import styled from "styled-components"
 import Hemkant from "../Assets/team/Hemkant_Tripathi.png"
-import Hitesh from "../Assets/team/Hitesh_kumar.png"
+import Hitesh from "../Assets/team/Hitesh_Kumar.png"
 import Divya from "../Assets/team/Divya_Narain.png"
 import Brijesh from "../Assets/team/Brijesh_Mor.png"
 import Aishwarya from "../Assets/team/Aishwarya_Mhaske.png"
-import Sayan from "../Assets/team/Sayan_sinha.png"
+import Sayan from "../Assets/team/Sayan_Sinha.png"
 import AliceCarousel from "react-alice-carousel"
 import "react-alice-carousel/lib/alice-carousel.css"
 
