@@ -3,7 +3,7 @@ import styled from "styled-components"
 import FooterLogo from "../Assets/footer/VTL_Logo_white.png"
 import StartUpIndia from "../Assets/footer/Startup_India_Logo.png"
 import MakeInIndia from "../Assets/footer/Make_In_India_Logo.png"
-// import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/Fa"
+import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/all"
 // import { AiFillTwitterCircle } from "react-icons/Ai"
 // import { FaPhoneAlt } from "react-icons/Fa"
 // import { FiMail } from "react-icons/Fi"
@@ -17,18 +17,18 @@ const Footer = () => {
           <div className="social-icons-container">
             <h4>Stay In Touch</h4>
             <div className="social-icons">
-              {/* <a href="/">
+              <a href="/">
                 <FaFacebook className="icon" />
               </a>
-              <a href="/">
+              {/* <a href="/">
                 <AiFillTwitterCircle className="icon" />
-              </a>
+              </a> */}
               <a href="/">
                 <FaInstagram className="icon" />
               </a>
               <a href="/">
                 <FaLinkedin className="icon" />
-              </a> */}
+              </a>
             </div>
           </div>
         </div>
