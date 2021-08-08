@@ -4,9 +4,9 @@ import FooterLogo from "../Assets/footer/VTL_Logo_white.png"
 import StartUpIndia from "../Assets/footer/Startup_India_Logo.png"
 import MakeInIndia from "../Assets/footer/Make_In_India_Logo.png"
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/Fa"
-import { AiFillTwitterCircle } from "react-icons/Ai"
-import { FaPhoneAlt } from "react-icons/Fa"
-import { FiMail } from "react-icons/Fi"
+// import { AiFillTwitterCircle } from "react-icons/Ai"
+// import { FaPhoneAlt } from "react-icons/Fa"
+// import { FiMail } from "react-icons/Fi"
 
 const Footer = () => {
   return (
@@ -17,7 +17,7 @@ const Footer = () => {
           <div className="social-icons-container">
             <h4>Stay In Touch</h4>
             <div className="social-icons">
-              <a href="/">
+              {/* <a href="/">
                 <FaFacebook className="icon" />
               </a>
               <a href="/">
@@ -28,16 +28,16 @@ const Footer = () => {
               </a>
               <a href="/">
                 <FaLinkedin className="icon" />
-              </a>
+              </a> */}
             </div>
           </div>
         </div>
         <div className="third-container">
           <div className="contact">
-            <FaPhoneAlt /> <span>+91 98712 19992</span>
+            {/* <FaPhoneAlt /> <span>+91 98712 19992</span> */}
           </div>
           <div className="email">
-            <FiMail /> <span>info@varahworld.com</span>
+            {/* <FiMail /> <span>info@varahworld.com</span> */}
           </div>
         </div>
         <div className="second-container">

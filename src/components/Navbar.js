@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
 import Logo from "../Assets/VarahaLogo_white.png"
-import { FiAlignJustify } from "react-icons/Fi"
+// import { FiAlignJustify } from "react-icons/Fi"
 
 const Navbar = () => {
   return (
@@ -16,7 +16,7 @@ const Navbar = () => {
           <NavLink to="/">Solutions</NavLink>
           <NavLink to="/">Contact Us</NavLink>
         </div>
-        <FiAlignJustify className="bars" />
+        {/* <FiAlignJustify className="bars" /> */}
       </div>
     </Nav>
   )
