@@ -27,9 +27,9 @@ const Footer = () => {
               <a href="/">
                 <FaFacebook className="icon" />
               </a>
-              {/* <a href="/">
+              <a href="/">
                 <AiFillTwitterCircle className="icon" />
-              </a> */}
+              </a>
               <a href="/">
                 <FaInstagram className="icon" />
               </a>
@@ -41,10 +41,10 @@ const Footer = () => {
         </div>
         <div className="third-container">
           <div className="contact">
-            {/* <FaPhoneAlt /> <span>+91 98712 19992</span> */}
+            <FaPhoneAlt /> <span>+91 98712 19992</span>
           </div>
           <div className="email">
-            {/* <FiMail /> <span>info@varahworld.com</span> */}
+            <FiMail /> <span>info@varahworld.com</span>
           </div>
         </div>
         <div className="second-container">
