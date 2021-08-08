@@ -3,7 +3,14 @@ import styled from "styled-components"
 import FooterLogo from "../Assets/footer/VTL_Logo_white.png"
 import StartUpIndia from "../Assets/footer/Startup_India_Logo.png"
 import MakeInIndia from "../Assets/footer/Make_In_India_Logo.png"
-import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/all"
+import {
+  FaFacebook,
+  FaInstagram,
+  FaLinkedin,
+  AiFillTwitterCircle,
+  FaPhoneAlt,
+  FiMail,
+} from "react-icons/all"
 // import { AiFillTwitterCircle } from "react-icons/Ai"
 // import { FaPhoneAlt } from "react-icons/Fa"
 // import { FiMail } from "react-icons/Fi"
