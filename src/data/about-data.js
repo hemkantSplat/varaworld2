@@ -16,7 +16,7 @@ const data = [
     img: Digital,
     title: "Enhanced tools to create Digital Repositories",
     content:
-      "By managing the data output in many instantly usable formats, creation of digital 3D repositories is easy with Varaha.",
+      "By managing the data output in many instantly usable formats, creation of digital 3D repositories is easy with Varaha, providing easy access to museum and heritage related data.",
   },
 
   {

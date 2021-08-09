@@ -13,8 +13,8 @@ const Navbar = () => {
           <NavLink to="/">Home</NavLink>
           <NavLink to="/about">About</NavLink>
           <NavLink to="/work">Work</NavLink>
-          <NavLink to="/">Solutions</NavLink>
-          <NavLink to="/">Contact Us</NavLink>
+          <NavLink to="/solution">Solutions</NavLink>
+          <NavLink to="/contact">Contact Us</NavLink>
         </div>
         <FiAlignJustify className="bars" />
       </div>

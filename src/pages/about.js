@@ -4,11 +4,13 @@ import styled from "styled-components"
 import VaraTech from "../Assets/about/About_Page_Introduction_Image.png"
 import Commitment from "../Assets/about/Isa_Khan_v02.png"
 import Mission from "../Assets/about/LMG_041_v02.png"
+import Team from "../components/ourTeam"
+import Client from "../components/Client"
 
 const about = () => {
   return (
     <Layout>
-      <AboutHeader>
+      <AboutHeader img={VaraTech}>
         <h2>ABOUT US</h2>
       </AboutHeader>
       <AboutContentContainerFirst>
@@ -50,6 +52,8 @@ const about = () => {
           </p>
         </div>
       </AboutContentContainerThird>
+      <Team />
+      <Client />
     </Layout>
   )
 }
@@ -63,17 +67,32 @@ const AboutHeader = styled.div`
   place-items: center;
   text-align: center;
   color: #ffffff;
+  background: url(${props => props.img});
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  height: 70vh;
 `
 
 const AboutContentContainerFirst = styled.div`
   display: grid;
-  height: 400px;
-  grid-template-columns: 50% 50%;
+  height: auto;
+  width: 100vw;
+  /* grid-template-columns: 50% 50%; */
+
+  @media screen and (min-width: 768px) {
+    grid-template-columns: 50% 50%;
+  }
 
   img {
     width: 100%;
-    height: 100%;
+    height: 300px;
     object-fit: cover;
+
+    @media screen and (min-width: 768px) {
+      height: 100%;
+      object-fit: cover;
+    }
   }
 
   .contents {
@@ -92,17 +111,26 @@ const AboutContentContainerFirst = styled.div`
 
 const AboutContentContainerSecond = styled.div`
   display: grid;
-  height: 400px;
-  grid-template-columns: 50% 50%;
+  height: auto;
+  width: 100vw;
   background: #212121;
+  /* grid-template-columns: 50% 50%; */
+
+  @media screen and (min-width: 768px) {
+    grid-template-columns: 50% 50%;
+  }
 
   img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    order: 1;
-  }
+    height: 300px;
+    object-fit: contain;
 
+    @media screen and (min-width: 768px) {
+      height: 100%;
+      order: 2;
+      object-fit: cover;
+    }
+  }
   .contents {
     padding: 4rem 4rem;
     background: #000000;
@@ -119,19 +147,29 @@ const AboutContentContainerSecond = styled.div`
 
 const AboutContentContainerThird = styled.div`
   display: grid;
-  height: 400px;
-  grid-template-columns: 50% 50%;
-  background: #000000;
+  height: auto;
+  width: 100vw;
+  background: #212121;
+  /* grid-template-columns: 50% 50%; */
+
+  @media screen and (min-width: 768px) {
+    grid-template-columns: 50% 50%;
+  }
 
   img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: 300px;
+    object-fit: contain;
+
+    @media screen and (min-width: 768px) {
+      height: 100%;
+      object-fit: cover;
+    }
   }
 
   .contents {
     padding: 4rem 4rem;
-    background: #212121;
+    background: #000000;
     color: #ffffff;
     h4 {
       margin-bottom: 2rem;

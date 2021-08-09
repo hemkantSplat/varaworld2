@@ -66,7 +66,7 @@ const OurTeam = () => {
     <TeamContainer>
       <h1>Our Team</h1>
       <div className="team-center">
-        <AliceCarousel
+        {/* <AliceCarousel
           responsive={responsive}
           autoPlay
           autoPlayStrategy="none"
@@ -78,9 +78,9 @@ const OurTeam = () => {
           disableDotsControls
           disableButtonsControls
           items={items}
-        />
+        /> */}
 
-        {/* <div className="team">
+        <div className="team">
           <img src={Hemkant} alt="hemkant" />
           <div className="team-content">
             <h2>Hemkant Tripathi</h2>
@@ -121,7 +121,7 @@ const OurTeam = () => {
             <h2>Sayan Sinha</h2>
             <h4>Research Assistant</h4>
           </div>
-        </div> */}
+        </div>
       </div>
     </TeamContainer>
   )
@@ -146,11 +146,11 @@ const TeamContainer = styled.div`
     width: 90vw;
     max-width: 1200px;
     margin: 0 auto;
-    /* display: grid;
+    display: grid;
     place-items: center;
     gap: 2rem;
-    grid-template-columns: repeat(3, 1fr); */
-    /* overflow: hidden; */
+    grid-template-columns: repeat(3, 1fr);
+    overflow: hidden;
     .team {
       width: 350px;
 
@@ -166,6 +166,15 @@ const TeamContainer = styled.div`
         display: grid;
         place-items: center;
         margin-top: 0.5rem;
+
+        h2 {
+          font-size: 22px !important;
+        }
+
+        h4 {
+          font-size: 20px;
+        }
+
         h2,
         h4 {
           color: #ffffff;
