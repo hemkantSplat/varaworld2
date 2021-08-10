@@ -75,7 +75,7 @@ const workTemplate = ({ data }) => {
             src={data.contentfulWork.test.urls[0]}
             frameborder="0"
             width="100%"
-            height="100%"
+            height="70%"
           ></iframe>
         </div>
         <div className="content">
@@ -157,6 +157,9 @@ const WorkContent = styled.div`
   .slider {
     width: 100%;
     /* height: 300px; */
+    padding: 2rem;
+    display: grid;
+    place-items: center;
 
     @media screen and (min-width: 768px) {
       width: 50%;

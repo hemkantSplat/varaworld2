@@ -4,7 +4,7 @@ import styled from "styled-components"
 import Logo from "../Assets/VarahaLogo_white.png"
 import { FiAlignJustify } from "react-icons/all"
 
-const Navbar = () => {
+const Navbar = ({ openSidebar }) => {
   return (
     <Nav>
       <div className="nav-center">
@@ -38,7 +38,7 @@ const Navbar = () => {
             Contact Us
           </NavLink>
         </div>
-        <FiAlignJustify className="bars" />
+        <FiAlignJustify className="bars" onClick={openSidebar} />
       </div>
     </Nav>
   )
