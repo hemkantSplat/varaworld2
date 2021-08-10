@@ -6,5 +6,18 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: [`gatsby-plugin-styled-components`],
+  plugins: [
+    `gatsby-plugin-styled-components`,
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `vjxz2s92jqxu`,
+        // Learn about environment variables: https://gatsby.dev/env-vars
+        accessToken: "8Lm-LFUuoZi6JcbhC_xZqmMWxgZDo7CfK49ZE1M5vHw",
+      },
+    },
+  ],
 }

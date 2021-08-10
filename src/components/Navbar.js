@@ -10,11 +10,33 @@ const Navbar = () => {
       <div className="nav-center">
         <img src={Logo} alt="logo" />
         <div className="nav-links">
-          <NavLink to="/">Home</NavLink>
-          <NavLink to="/about">About</NavLink>
-          <NavLink to="/work">Work</NavLink>
-          <NavLink to="/solution">Solutions</NavLink>
-          <NavLink to="/contact">Contact Us</NavLink>
+          <NavLink to="/" activeStyle={{ borderBottom: "2px solid #ffffff" }}>
+            Home
+          </NavLink>
+          <NavLink
+            to="/about"
+            activeStyle={{ borderBottom: "2px solid #ffffff" }}
+          >
+            About
+          </NavLink>
+          <NavLink
+            to="/work"
+            activeStyle={{ borderBottom: "2px solid #ffffff" }}
+          >
+            Work
+          </NavLink>
+          <NavLink
+            to="/solution"
+            activeStyle={{ borderBottom: "2px solid #ffffff" }}
+          >
+            Solutions
+          </NavLink>
+          <NavLink
+            to="/contact"
+            activeStyle={{ borderBottom: "2px solid #ffffff" }}
+          >
+            Contact Us
+          </NavLink>
         </div>
         <FiAlignJustify className="bars" />
       </div>

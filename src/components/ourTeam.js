@@ -6,60 +6,75 @@ import Divya from "../Assets/team/Divya_Narain.png"
 import Brijesh from "../Assets/team/Brijesh_Mor.png"
 import Aishwarya from "../Assets/team/Aishwarya_Mhaske.png"
 import Sayan from "../Assets/team/Sayan_Sinha.png"
-import AliceCarousel from "react-alice-carousel"
-import "react-alice-carousel/lib/alice-carousel.css"
+import Slider from "react-slick"
+import "slick-carousel/slick/slick.css"
+import "slick-carousel/slick/slick-theme.css"
 
-const responsive = {
-  0: { items: 1 },
-  568: { items: 2 },
-  1024: { items: 3 },
-  1600: { item: 3 },
+// import AliceCarousel from "react-alice-carousel"
+// import "react-alice-carousel/lib/alice-carousel.css"
+
+// const responsive = {
+//   0: { items: 1 },
+//   568: { items: 2 },
+//   1024: { items: 3 },
+//   1600: { item: 3 },
+// }
+
+// const items = [
+//   <div className="team">
+//     <img src={Hemkant} alt="hemkant" />
+//     <div className="team-content">
+//       <h2 style={{ fontSize: "28px" }}>Hemkant Tripathi</h2>
+//       <h4>Co-founder</h4>
+//     </div>
+//   </div>,
+//   <div className="team">
+//     <img src={Hitesh} alt="hitesh" />
+//     <div className="team-content">
+//       <h2 style={{ fontSize: "28px" }}>Hitesh Kumar</h2>
+//       <h4>Co-founder</h4>
+//     </div>
+//   </div>,
+//   <div className="team">
+//     <img src={Divya} alt="Divya" />
+//     <div className="team-content">
+//       <h2 style={{ fontSize: "28px" }}>Divya Narain</h2>
+//       <h4>Asst. Manager, Museum Projects</h4>
+//     </div>
+//   </div>,
+//   <div className="team">
+//     <img src={Brijesh} alt="brijesh" />
+//     <div className="team-content">
+//       <h2 style={{ fontSize: "28px" }}>Brijesh Mor</h2>
+//       <h4>Head, 3D Technology Solutions</h4>
+//     </div>
+//   </div>,
+//   <div className="team">
+//     <img src={Aishwarya} alt="aishwarya" />
+//     <div className="team-content">
+//       <h2 style={{ fontSize: "28px" }}>Aishwarya Mhaske</h2>
+//       <h4>Research Assistant</h4>
+//     </div>
+//   </div>,
+//   <div className="team">
+//     <img src={Sayan} alt="sayan" />
+//     <div className="team-content">
+//       <h2 style={{ fontSize: "28px" }}>Sayan Sinha</h2>
+//       <h4>Research Assistant</h4>
+//     </div>
+//   </div>,
+// ]
+
+const settings = {
+  dots: true,
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  speed: 2000,
+  autoplaySpeed: 2000,
+  cssEase: "linear",
 }
-
-const items = [
-  <div className="team">
-    <img src={Hemkant} alt="hemkant" />
-    <div className="team-content">
-      <h2 style={{ fontSize: "28px" }}>Hemkant Tripathi</h2>
-      <h4>Co-founder</h4>
-    </div>
-  </div>,
-  <div className="team">
-    <img src={Hitesh} alt="hitesh" />
-    <div className="team-content">
-      <h2 style={{ fontSize: "28px" }}>Hitesh Kumar</h2>
-      <h4>Co-founder</h4>
-    </div>
-  </div>,
-  <div className="team">
-    <img src={Divya} alt="Divya" />
-    <div className="team-content">
-      <h2 style={{ fontSize: "28px" }}>Divya Narain</h2>
-      <h4>Asst. Manager, Museum Projects</h4>
-    </div>
-  </div>,
-  <div className="team">
-    <img src={Brijesh} alt="brijesh" />
-    <div className="team-content">
-      <h2 style={{ fontSize: "28px" }}>Brijesh Mor</h2>
-      <h4>Head, 3D Technology Solutions</h4>
-    </div>
-  </div>,
-  <div className="team">
-    <img src={Aishwarya} alt="aishwarya" />
-    <div className="team-content">
-      <h2 style={{ fontSize: "28px" }}>Aishwarya Mhaske</h2>
-      <h4>Research Assistant</h4>
-    </div>
-  </div>,
-  <div className="team">
-    <img src={Sayan} alt="sayan" />
-    <div className="team-content">
-      <h2 style={{ fontSize: "28px" }}>Sayan Sinha</h2>
-      <h4>Research Assistant</h4>
-    </div>
-  </div>,
-]
 
 const OurTeam = () => {
   return (
@@ -79,7 +94,6 @@ const OurTeam = () => {
           disableButtonsControls
           items={items}
         /> */}
-
         <div className="team">
           <img src={Hemkant} alt="hemkant" />
           <div className="team-content">
@@ -149,8 +163,13 @@ const TeamContainer = styled.div`
     display: grid;
     place-items: center;
     gap: 2rem;
-    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-columns: repeat(3, 1fr); */
     overflow: hidden;
+
+    @media screen and (min-width: 768px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
     .team {
       width: 350px;
 

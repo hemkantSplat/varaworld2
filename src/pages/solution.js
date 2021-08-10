@@ -5,13 +5,13 @@ const solution = () => {
   return (
     <Layout>
       <AboutHeader img={`../solution.png`}>
-        <h2>Technology enabled solutions</h2>
+        <h2>TECHNOLOGY ENABLED SOLUTIONS</h2>
         <h5>How Varaha can help preserve the cultural heritage</h5>
       </AboutHeader>
       <Wrapper>
         <AboutCenter>
           <div className="service" style={{ width: "300px" }}>
-            <img src={`../digitisation.svg`} />
+            <img src={`../digitisation.svg`} alt="digitisation" />
             <h5>Fast and accurate 3D/2D Digitisation</h5>
             <p>
               With extensive experience and robust technology backbone, Varaha
@@ -20,7 +20,7 @@ const solution = () => {
             </p>
           </div>
           <div className="service" style={{ width: "300px" }}>
-            <img src={`../digitalRepo.svg`} />
+            <img src={`../digitalRepo.svg`} alt="digitalrepo" />
             <h5>Enhanced tools to create Digital Repositories</h5>
             <p>
               By managing the data output in many instantly usable formats,
@@ -29,7 +29,7 @@ const solution = () => {
             </p>
           </div>
           <div className="service" style={{ width: "300px" }}>
-            <img src={`../centralizeddatabase.svg`} />
+            <img src={`../centralizeddatabase.svg`} alt="centralizeddatabase" />
             <h5>Centralized Database for museums and heritage collections</h5>
             <p>
               Varaha brings together the highly scattered and lesser known
@@ -38,7 +38,7 @@ const solution = () => {
             </p>
           </div>
           <div className="service" style={{ width: "300px" }}>
-            <img src={`../tools.svg`} />
+            <img src={`../tools.svg`} alt="tools" />
             <h5>Tools for learning and collaborative research</h5>
             <p>
               By intelligently documenting the overwhelming amount of metadata
@@ -48,7 +48,7 @@ const solution = () => {
             </p>
           </div>
           <div className="service" style={{ width: "300px" }}>
-            <img src={`../Virtual_Museum.svg`} />
+            <img src={`../Virtual_Museum.svg`} alt="virtualMuseum" />
             <h5>
               Virtual Museum building <br /> solutions
             </h5>
