@@ -91,7 +91,7 @@ const workTemplate = ({ data }) => {
                 <GatsbyImage
                   image={image}
                   alt={item.title}
-                  style={{ height: "400px" }}
+                  style={{ height: "600px" }}
                 />
               </div>
             )
@@ -146,15 +146,17 @@ const WorkHeader = styled.div`
 const WorkContent = styled.div`
   width: 100vw;
   background: #212121;
-  height: 500px;
+  /* height: 700px; */
   /* display: flex; */
 
   @media screen and (min-width: 768px) {
     display: flex;
+    height: 700px;
   }
 
   .slider {
     width: 100%;
+    /* height: 300px; */
 
     @media screen and (min-width: 768px) {
       width: 50%;
@@ -165,6 +167,8 @@ const WorkContent = styled.div`
     width: 100%;
     padding: 3rem 3rem;
     color: #ffffff;
+    display: grid;
+    place-items: center;
 
     p {
       line-height: 2;
@@ -176,10 +180,15 @@ const WorkContent = styled.div`
 `
 
 const VideoContent = styled.div`
-  height: 100px;
+  /* height: 650px; */
   background: #000000;
-  padding: 2rem 0;
-  margin-bottom: 20rem;
+  padding: 2rem 4rem;
+  /* margin-bottom: 2rem; */
+
+  .slick-prev {
+    left: 25px;
+    z-index: 999;
+  }
 
   .slick-next::before {
     font-size: 62px;
