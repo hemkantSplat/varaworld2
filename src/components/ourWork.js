@@ -23,7 +23,7 @@ const ourWork = () => {
           {" "}
           <div className="work">
             <img src={NationalMuseum} alt="National Museum" />
-            <h3>National Museum Exhibitions</h3>
+            <h3>National Museum Virtual Exhibitions</h3>
           </div>
         </Link>
         <Link to="/">
@@ -37,7 +37,7 @@ const ourWork = () => {
           {" "}
           <div className="work">
             <img src={VRExperience} alt="VR Experience" />
-            <h3>VR Experiences</h3>
+            <h3>VR Experiences of Cultural spaces</h3>
           </div>
         </Link>
       </div>
@@ -64,6 +64,7 @@ const WorkContainer = styled.div`
     text-align: center;
     margin-bottom: 2rem;
     font-weight: 300;
+    font-size: 22px;
   }
 
   .work-center {

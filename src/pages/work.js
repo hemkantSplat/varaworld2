@@ -69,6 +69,10 @@ const AboutHeader = styled.div`
   background-size: cover;
   background-position: top center;
   height: 60vh;
+
+  h5 {
+    font-size: 22px;
+  }
 `
 
 const Wrapper = styled.div`

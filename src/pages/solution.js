@@ -5,7 +5,7 @@ const solution = () => {
   return (
     <Layout>
       <AboutHeader img={`../solution.png`}>
-        <h2>TECHNOLOGY ENABLED SOLUTIONS</h2>
+        <h1>TECHNOLOGY ENABLED SOLUTIONS</h1>
         <h5>How Varaha can help preserve the cultural heritage</h5>
       </AboutHeader>
       <Wrapper>
@@ -87,6 +87,10 @@ const AboutHeader = styled.div`
   background-size: cover;
   background-position: top center;
   height: 70vh;
+
+  h5 {
+    font-size: 22px;
+  }
 `
 
 const AboutCenter = styled.div`
@@ -100,6 +104,7 @@ const AboutCenter = styled.div`
 
   @media screen and (min-width: 768px) {
     grid-template-columns: repeat(3, 1fr);
+    row-gap: 4rem;
   }
 
   .service {
@@ -125,8 +130,11 @@ const AboutCenter = styled.div`
     }
 
     @media screen and (min-width: 768px) {
-      .service:nth-child(4) {
-        transform: translateX(30%);
+      &:nth-child(4) {
+        transform: translateX(60%);
+      }
+      &:nth-child(5) {
+        transform: translateX(60%);
       }
     }
   }
@@ -149,8 +157,4 @@ const AboutCenter = styled.div`
   .service:nth-child(5) > img {
     transform: translateY(1rem);
   } */
-
-  .service:nth-child(5) h5 {
-    margin-top: 1rem;
-  }
 `

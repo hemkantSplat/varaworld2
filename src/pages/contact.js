@@ -8,7 +8,7 @@ const contact = () => {
     <Layout>
       <AboutHeader img={`../solution.png`}>
         <h1>GET IN TOUCH</h1>
-        <h5>WE WOULD LOVE TO HEAR FROM YOU</h5>
+        <h5>We would love to hear from you</h5>
       </AboutHeader>
       <Wrapper>
         <div className="contact-center">
@@ -20,12 +20,15 @@ const contact = () => {
           <div className="contact">
             <FaPhoneAlt />
             <h5>call us.</h5>
-            <p>+91 98712 19992</p>
+            <p>+91 96507 87318</p>
           </div>
           <div className="contact">
             <MdLocationOn />
             <h5>find us.</h5>
-            <p>info@varahworld.com</p>
+            <p>
+              B-103, Fourth Floor, Behind Triveni Complex, Panchsheel Vihar, New
+              Delhi, 110017
+            </p>
           </div>
         </div>
       </Wrapper>
@@ -50,6 +53,9 @@ const AboutHeader = styled.div`
   background-size: cover;
   background-position: top center;
   height: 60vh;
+  h5 {
+    font-size: 22px;
+  }
 `
 
 const Wrapper = styled.div`

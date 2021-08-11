@@ -11,7 +11,7 @@ const about = () => {
   return (
     <Layout>
       <AboutHeader img={VaraTech}>
-        <h2>ABOUT US</h2>
+        <h1>ABOUT US</h1>
       </AboutHeader>
       <AboutContentContainerFirst>
         <img src={VaraTech} alt="varaTech" />
@@ -101,6 +101,7 @@ const AboutContentContainerFirst = styled.div`
     color: #ffffff;
     h4 {
       margin-bottom: 2rem;
+      font-size: 32px;
     }
     p {
       line-height: 1.5;
@@ -137,6 +138,7 @@ const AboutContentContainerSecond = styled.div`
     color: #ffffff;
     h4 {
       margin-bottom: 2rem;
+      font-size: 32px;
     }
     p {
       line-height: 1.5;
@@ -173,6 +175,7 @@ const AboutContentContainerThird = styled.div`
     color: #ffffff;
     h4 {
       margin-bottom: 2rem;
+      font-size: 32px;
     }
     p {
       line-height: 1.5;

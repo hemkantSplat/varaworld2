@@ -9,17 +9,48 @@ const AboutUs = () => {
       <p>
         A ‘Tech-Knowledge’ organisation founded to create end-to-end solutions
         for capturing high quality scientific archive of accurate 3D data of
-        museums, artifacts and heritage sites.
+        museum artifacts and heritage sites.
       </p>
       <div className="about-center">
-        {Data.map(item => {
+        {/* {Data.map(item => {
           return (
             <div className="service" key={item.id} style={{ width: "300px" }}>
               <img src={item.img} alt={item.title} />
               <h5>{item.title}</h5>
             </div>
           )
-        })}
+        })} */}
+        <div className="service" style={{ width: "300px" }}>
+          <img src={`../digitisation.svg`} alt="digitisation" />
+          <h5>
+            Fast and accurate <br /> 3D/2D Digitisation
+          </h5>
+        </div>
+        <div className="service" style={{ width: "300px" }}>
+          <img src={`../digitalRepo.svg`} alt="digitalrepo" />
+          <h5>
+            Enhanced tools to create <br /> Digital Repositories
+          </h5>
+        </div>
+        <div className="service" style={{ width: "300px" }}>
+          <img src={`../centralizeddatabase.svg`} alt="centralized-database" />
+          <h5>
+            Centralized Database for museums <br /> and heritage collections
+          </h5>
+        </div>
+        <div className="service" style={{ width: "300px" }}>
+          <img src={`../tools.svg`} alt="tools" />
+          <h5>
+            Tools for learning and <br /> collaborative research
+          </h5>
+        </div>
+        <div className="service" style={{ width: "300px" }}>
+          <img src={`../Virtual_Museum.svg`} alt="virtualMuseum" />
+          <h5>
+            {" "}
+            Virtual Museum building <br /> solutions
+          </h5>
+        </div>
       </div>
     </AboutContainer>
   )
@@ -61,9 +92,10 @@ img{
     font-weight: 300;
     width: 90%;
     margin: 0 auto;
+    font-size: 22px;
 
     @media screen and (min-width: 768px) {
-      width: 46rem;
+      width: 62rem;
     }
   }
 
@@ -77,7 +109,23 @@ img{
 
     @media screen and (min-width: 768px) {
       grid-template-columns: repeat(3, 1fr);
+      row-gap: 3rem;
+      width: 80vw;
     }
+
+    /* .first-container {
+      display: grid;
+      place-items: center;
+      gap: 3rem;
+
+      @media screen and (min-width: 768px) {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    .second-container {
+      display: flex;
+    } */
 
     .service {
       display: grid;
@@ -94,11 +142,19 @@ img{
       h5 {
         font-weight: 400;
         margin-top: 0.75rem;
+        font-size: 18px;
       }
 
       @media screen and (min-width: 768px) {
-        .service:nth-child(4) {
-          transform: translateX(30%);
+        &:nth-child(1) h5 {
+          height: 43px;
+        }
+
+        &:nth-child(4) {
+          transform: translateX(60%);
+        }
+        &:nth-child(5) {
+          transform: translateX(60%);
         }
       }
     }

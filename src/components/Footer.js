@@ -43,7 +43,7 @@ const Footer = () => {
         </div>
         <div className="third-container">
           <div className="contact">
-            <FaPhoneAlt /> <span>+91 98712 19992</span>
+            <FaPhoneAlt /> <span>+91 96507 87318</span>
           </div>
           <div className="email">
             <FiMail /> <span>info@varahworld.com</span>
@@ -122,6 +122,10 @@ const FooterContainer = styled.footer`
 
   .second-container {
     display: grid;
+
+    img {
+      margin-bottom: 0.5rem;
+    }
   }
 
   .third-container {

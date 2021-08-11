@@ -126,14 +126,14 @@ const OurTeam = () => {
           <img src={Aishwarya} alt="aishwarya" />
           <div className="team-content">
             <h2>Aishwarya Mhaske</h2>
-            <h4>Research Assistant</h4>
+            <h4>Researcher</h4>
           </div>
         </div>
         <div className="team">
           <img src={Sayan} alt="sayan" />
           <div className="team-content">
             <h2>Sayan Sinha</h2>
-            <h4>Research Assistant</h4>
+            <h4>Researcher</h4>
           </div>
         </div>
       </div>
@@ -168,13 +168,14 @@ const TeamContainer = styled.div`
 
     @media screen and (min-width: 768px) {
       grid-template-columns: repeat(3, 1fr);
+      column-gap: 2rem;
     }
 
     .team {
       width: 350px;
 
       @media screen and (min-width: 768px) {
-        width: 300px;
+        width: 260px;
       }
 
       img {

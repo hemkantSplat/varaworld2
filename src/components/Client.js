@@ -39,7 +39,7 @@ const ClientContainer = styled.div`
     margin: 0 auto;
     display: grid;
     place-items: center;
-    gap: 2rem;
+    /* gap: 1rem; */
     img {
       width: 200px;
     }
@@ -54,6 +54,7 @@ const ClientContainer = styled.div`
 
     @media screen and (min-width: 768px) {
       grid-template-columns: repeat(4, 1fr);
+      gap: 2rem;
     }
   }
 `
