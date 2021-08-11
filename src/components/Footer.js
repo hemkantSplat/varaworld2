@@ -10,6 +10,8 @@ import {
   AiFillTwitterCircle,
   FaPhoneAlt,
   FiMail,
+  FaFacebookF,
+  FaTwitter,
 } from "react-icons/all"
 // import { AiFillTwitterCircle } from "react-icons/Ai"
 // import { FaPhoneAlt } from "react-icons/Fa"
@@ -25,10 +27,10 @@ const Footer = () => {
             <h4>Stay In Touch</h4>
             <div className="social-icons">
               <a href="/">
-                <FaFacebook className="icon" />
+                <FaFacebookF className="icon" />
               </a>
               <a href="/">
-                <AiFillTwitterCircle className="icon" />
+                <FaTwitter className="icon" />
               </a>
               <a href="/">
                 <FaInstagram className="icon" />
@@ -93,14 +95,21 @@ const FooterContainer = styled.footer`
         grid-template-columns: repeat(4, 1fr);
         gap: 0.5rem;
 
-        .icon {
-          font-size: 25px;
-          color: #ffffff;
+        a {
+          width: 30px;
+          height: 30px;
+          background: #ffffff;
+          display: grid;
+          place-items: center;
+          border-radius: 50%;
           transition: all 0.3s linear;
-
           &:hover {
             transform: scale(1.3);
           }
+        }
+        .icon {
+          font-size: 18px;
+          color: #212121;
         }
       }
     }
