@@ -192,7 +192,7 @@ const TeamContainer = styled.div`
         }
 
         h4 {
-          font-size: 20px;
+          font-size: 18px;
         }
 
         h2,
