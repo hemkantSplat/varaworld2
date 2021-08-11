@@ -91,7 +91,7 @@ const workTemplate = ({ data }) => {
                 <GatsbyImage
                   image={image}
                   alt={item.title}
-                  style={{ height: "600px" }}
+                  style={{ height: "650px", objectFit: "cover" }}
                 />
               </div>
             )
@@ -185,7 +185,7 @@ const WorkContent = styled.div`
 const VideoContent = styled.div`
   /* height: 650px; */
   background: #000000;
-  padding: 2rem 4rem;
+  padding: 2rem 3rem;
   /* margin-bottom: 2rem; */
 
   .slick-prev {
