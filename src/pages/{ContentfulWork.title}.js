@@ -6,17 +6,32 @@ import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 import Slider from "react-slick"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import { IoIosArrowForward, IoIosArrowBack } from "react-icons/all"
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props
   return (
-    <div
+    // <div
+    //   className={className}
+    //   style={{
+    //     ...style,
+    //     display: "block",
+    //     transform: "translateX(-500%)",
+    //     fontSize: "32px",
+    //   }}
+    //   onClick={onClick}
+    // />
+    <IoIosArrowForward
       className={className}
       style={{
-        ...style,
+        fontSize: "65px",
         display: "block",
-        transform: "translateX(-500%)",
-        fontSize: "32px",
+        right: "0px",
+        zIndex: "15",
+        height: "60px",
+        width: "60px",
+        opacity: "1",
+        color: "White",
       }}
       onClick={onClick}
     />
@@ -26,12 +41,17 @@ function SampleNextArrow(props) {
 function SamplePrevArrow(props) {
   const { className, style, onClick } = props
   return (
-    <div
+    <IoIosArrowBack
       className={className}
       style={{
-        ...style,
+        fontSize: "65px",
         display: "block",
-        transform: "translateX(500%),",
+        left: "0px",
+        zIndex: "15",
+        height: "60px",
+        width: "60px",
+        opacity: "1",
+        color: "White",
       }}
       onClick={onClick}
     />
@@ -75,7 +95,7 @@ const workTemplate = ({ data }) => {
             src={data.contentfulWork.test.urls[0]}
             frameborder="0"
             width="100%"
-            height="70%"
+            height="100%"
           ></iframe>
         </div>
         <div className="content">
@@ -87,13 +107,11 @@ const workTemplate = ({ data }) => {
           {data.contentfulWork.images.map((item, index) => {
             const image = getImage(item)
             return (
-              <div>
-                <GatsbyImage
-                  image={image}
-                  alt={item.title}
-                  style={{ height: "650px", objectFit: "cover" }}
-                />
-              </div>
+              <GatsbyImage
+                image={image}
+                alt={item.title}
+                style={{ height: "650px", objectFit: "cover" }}
+              />
             )
           })}
         </Slider>
@@ -118,7 +136,7 @@ export const query = graphql`
       images {
         gatsbyImageData(
           placeholder: TRACED_SVG
-          layout: FULL_WIDTH
+          layout: CONSTRAINED
           formats: WEBP
         )
       }
@@ -160,15 +178,22 @@ const WorkContent = styled.div`
     padding: 2rem;
     display: grid;
     place-items: center;
-
     @media screen and (min-width: 768px) {
       width: 50%;
+    }
+
+    iframe {
+      height: 100%;
+
+      @media screen and (min-width: 768px) {
+        height: 70%;
+      }
     }
   }
 
   .content {
     width: 100%;
-    padding: 3rem 3rem;
+    padding: 1rem 3rem;
     color: #ffffff;
     display: grid;
     place-items: center;
@@ -178,6 +203,7 @@ const WorkContent = styled.div`
     }
     @media screen and (min-width: 768px) {
       width: 50%;
+      padding: 3rem 3rem;
     }
   }
 `
@@ -185,8 +211,12 @@ const WorkContent = styled.div`
 const VideoContent = styled.div`
   /* height: 650px; */
   background: #000000;
-  padding: 2rem 3rem;
+
   /* margin-bottom: 2rem; */
+
+  @media screen and (min-width: 768px) {
+    padding: 2rem 3rem;
+  }
 
   .slick-prev {
     left: 25px;
