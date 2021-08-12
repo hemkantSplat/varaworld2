@@ -70,13 +70,13 @@ const workTemplate = ({ data }) => {
     autoplay: true,
     autoplaySpeed: 5000,
     pauseOnHover: true,
-    adaptiveHeight: true,
+    adaptiveHeight: false,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
   }
   return (
     <Layout>
-      <WorkHeader img={`../solution.png`}>
+      <WorkHeader img={data.contentfulWork.workintro.file.url}>
         <h2>{data.contentfulWork.title}</h2>
       </WorkHeader>
       <WorkContent>
@@ -96,6 +96,10 @@ const workTemplate = ({ data }) => {
             frameborder="0"
             width="100%"
             height="100%"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
           ></iframe>
         </div>
         <div className="content">
@@ -140,6 +144,11 @@ export const query = graphql`
           formats: WEBP
         )
       }
+      workintro {
+        file {
+          url
+        }
+      }
     }
   }
 `
@@ -158,7 +167,11 @@ const WorkHeader = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
-  height: 50vh;
+  height: 60vh;
+
+  @media screen and (min-width: 768px) {
+    height: 75vh;
+  }
 `
 
 const WorkContent = styled.div`
@@ -177,12 +190,13 @@ const WorkContent = styled.div`
 
   .slider {
     width: 100%;
-    /* height: 300px; */
+    height: 300px;
     padding: 2rem;
     display: grid;
     place-items: center;
     @media screen and (min-width: 768px) {
       width: 50%;
+      height: 100%;
     }
 
     iframe {

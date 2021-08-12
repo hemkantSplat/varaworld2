@@ -131,7 +131,7 @@ const AboutContentContainerSecond = styled.div`
 
     @media screen and (min-width: 768px) {
       order: 2;
-      object-fit: cover;
+      object-fit: contain;
     }
 
     @media screen and (min-width: 1200px) {
@@ -170,7 +170,7 @@ const AboutContentContainerThird = styled.div`
     object-fit: contain;
 
     @media screen and (min-width: 768px) {
-      object-fit: cover;
+      object-fit: contain;
     }
     @media screen and (min-width: 1200px) {
       height: 500px;

@@ -12,28 +12,28 @@ const ourWork = () => {
       <h1>Our Work</h1>
       <h4>Solutions powered by Varaha</h4>
       <div className="work-center">
-        <Link to="/">
+        <Link to="/work">
           {" "}
           <div className="work">
             <img src={VaraMuseum} alt="varaMuseum" />
             <h3>Vara Museum Repository</h3>
           </div>
         </Link>
-        <Link to="/">
+        <Link to="/work">
           {" "}
           <div className="work">
             <img src={NationalMuseum} alt="National Museum" />
             <h3>National Museum Virtual Exhibitions</h3>
           </div>
         </Link>
-        <Link to="/">
+        <Link to="/work">
           {" "}
           <div className="work">
             <img src={BiharMuseum} alt="Bihar Museum" />
             <h3>Bihar Museum Virtual Gallery</h3>
           </div>
         </Link>
-        <Link to="/">
+        <Link to="/work">
           {" "}
           <div className="work">
             <img src={VRExperience} alt="VR Experience" />

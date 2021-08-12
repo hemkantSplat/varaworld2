@@ -39,7 +39,7 @@ const ClientContainer = styled.div`
     margin: 0 auto;
     display: grid;
     place-items: center;
-    /* gap: 1rem; */
+    row-gap: 1.5rem;
     img {
       width: 200px;
     }

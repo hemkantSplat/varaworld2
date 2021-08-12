@@ -4,10 +4,8 @@ import FooterLogo from "../Assets/footer/VTL_Logo_white.png"
 import StartUpIndia from "../Assets/footer/Startup_India_Logo.png"
 import MakeInIndia from "../Assets/footer/Make_In_India_Logo.png"
 import {
-  FaFacebook,
   FaInstagram,
   FaLinkedin,
-  AiFillTwitterCircle,
   FaPhoneAlt,
   FiMail,
   FaFacebookF,
@@ -26,16 +24,32 @@ const Footer = () => {
           <div className="social-icons-container">
             <h4>Stay In Touch</h4>
             <div className="social-icons">
-              <a href="/">
+              <a
+                href="https://www.facebook.com/varahatechlabs/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FaFacebookF className="icon" />
               </a>
-              <a href="/">
+              <a
+                href="https://www.linkedin.com/company/varaha-tech-labs"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FaTwitter className="icon" />
               </a>
-              <a href="/">
+              <a
+                href="https://www.instagram.com/varahatechlabs/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FaInstagram className="icon" />
               </a>
-              <a href="/">
+              <a
+                href="https://www.linkedin.com/company/varaha-tech-labs"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FaLinkedin className="icon" />
               </a>
             </div>
@@ -70,6 +84,7 @@ const FooterContainer = styled.footer`
     margin: 0 auto;
     display: grid;
     place-items: center;
+    row-gap: 2rem;
 
     @media screen and (min-width: 768px) {
       display: flex;
@@ -85,7 +100,7 @@ const FooterContainer = styled.footer`
   .first-container {
     display: grid;
     gap: 1rem;
-    margin-bottom: 1.5rem;
+    /* margin-bottom: 1.5rem; */
     .social-icons-container {
       display: grid;
       place-items: center;
@@ -124,7 +139,7 @@ const FooterContainer = styled.footer`
     display: grid;
 
     img {
-      margin-bottom: 0.5rem;
+      margin-bottom: 1rem;
     }
   }
 

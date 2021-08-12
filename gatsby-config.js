@@ -6,11 +6,19 @@
 
 module.exports = {
   /* Your site config here */
+
+  siteMetadata: {
+    title: "Varaha",
+    description:
+      "Varaha is an experiential technology startup which believes that the cultural identities of any society are deeply preserved within the archaeological and heritage artifacts, monuments, sites, and artistic expressions.",
+  },
+
   plugins: [
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-contentful`,
       options: {

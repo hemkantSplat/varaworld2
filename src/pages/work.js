@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import Layout from "../components/Layout"
-import Work from "../components/ourWork"
+// import Work from "../components/ourWork"
 import { graphql, Link } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import slugify from "slugify"

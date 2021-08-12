@@ -6,9 +6,9 @@ import Divya from "../Assets/team/Divya_Narain.png"
 import Brijesh from "../Assets/team/Brijesh_Mor.png"
 import Aishwarya from "../Assets/team/Aishwarya_Mhaske.png"
 import Sayan from "../Assets/team/Sayan_Sinha.png"
-import Slider from "react-slick"
-import "slick-carousel/slick/slick.css"
-import "slick-carousel/slick/slick-theme.css"
+// import Slider from "react-slick"
+// import "slick-carousel/slick/slick.css"
+// import "slick-carousel/slick/slick-theme.css"
 
 // import AliceCarousel from "react-alice-carousel"
 // import "react-alice-carousel/lib/alice-carousel.css"
@@ -65,16 +65,16 @@ import "slick-carousel/slick/slick-theme.css"
 //   </div>,
 // ]
 
-const settings = {
-  dots: true,
-  infinite: true,
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  autoplay: true,
-  speed: 2000,
-  autoplaySpeed: 2000,
-  cssEase: "linear",
-}
+// const settings = {
+//   dots: true,
+//   infinite: true,
+//   slidesToShow: 3,
+//   slidesToScroll: 1,
+//   autoplay: true,
+//   speed: 2000,
+//   autoplaySpeed: 2000,
+//   cssEase: "linear",
+// }
 
 const OurTeam = () => {
   return (
@@ -192,7 +192,7 @@ const TeamContainer = styled.div`
         }
 
         h4 {
-          font-size: 18px;
+          font-size: 16.5px;
         }
 
         h2,
