@@ -90,9 +90,12 @@ const AboutContentContainerFirst = styled.div`
     object-fit: cover;
 
     @media screen and (min-width: 768px) {
-      height: 100%;
+      height: 500px;
       object-fit: cover;
     }
+    /* @media screen and (min-width: 1200px) {
+      height: 100%;
+    } */
   }
 
   .contents {
@@ -127,9 +130,12 @@ const AboutContentContainerSecond = styled.div`
     object-fit: contain;
 
     @media screen and (min-width: 768px) {
-      height: 100%;
       order: 2;
       object-fit: cover;
+    }
+
+    @media screen and (min-width: 1200px) {
+      height: 500px;
     }
   }
   .contents {
@@ -164,8 +170,10 @@ const AboutContentContainerThird = styled.div`
     object-fit: contain;
 
     @media screen and (min-width: 768px) {
-      height: 100%;
       object-fit: cover;
+    }
+    @media screen and (min-width: 1200px) {
+      height: 500px;
     }
   }
 

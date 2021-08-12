@@ -98,7 +98,7 @@ const AboutCenter = styled.div`
   margin: 0 auto;
   max-width: 1200px;
   display: grid;
-  gap: 2rem;
+  gap: 1rem;
   place-items: center;
   padding: 5rem 0;
 

@@ -107,7 +107,7 @@ img{
     gap: 2rem;
     place-items: center;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1200px) {
       grid-template-columns: repeat(3, 1fr);
       row-gap: 3rem;
       width: 80vw;
@@ -145,7 +145,7 @@ img{
         font-size: 18px;
       }
 
-      @media screen and (min-width: 768px) {
+      @media screen and (min-width: 1200px) {
         &:nth-child(1) h5 {
           height: 43px;
         }

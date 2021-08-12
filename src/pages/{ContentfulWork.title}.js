@@ -169,6 +169,9 @@ const WorkContent = styled.div`
 
   @media screen and (min-width: 768px) {
     display: flex;
+  }
+
+  @media screen and (min-width: 1200px) {
     height: 700px;
   }
 
