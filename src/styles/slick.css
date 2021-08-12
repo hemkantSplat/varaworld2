@@ -1,0 +1,40 @@
+@media screen and (min-width: 768px) {
+  .slick-slide {
+    margin: 0 16px;
+  }
+  /* the parent */
+  .slick-list {
+    margin: 0 -16px;
+  }
+}
+
+.team-center {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.team {
+  width: 300px;
+  height: 300px;
+}
+
+.team img {
+  width: 100%;
+  height: 100%;
+}
+
+.team-content {
+  display: grid;
+  place-items: center;
+  margin-top: 0.5rem;
+  color: #ffffff;
+}
+
+.team-content h2 {
+  font-size: 22px !important;
+}
+
+.team-content h4 {
+  font-size: 16.5px;
+}
