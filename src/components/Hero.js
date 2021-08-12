@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import Video from "../Assets/Video.mp4"
+import Video from "../Assets/Untitled.mp4"
 import AliceCarousel from "react-alice-carousel"
 import "react-alice-carousel/lib/alice-carousel.css"
 import HeroBackground from "../Assets/heroBackground.png"
