@@ -2,10 +2,12 @@ import React from "react"
 import Layout from "../components/Layout"
 import styled from "styled-components"
 import { FaPhoneAlt, FiMail, MdLocationOn } from "react-icons/all"
+import SEO from "../components/SEO"
 
 const contact = () => {
   return (
     <Layout>
+      <SEO title="Contact" description="Contact Page" />
       <AboutHeader img={`../solution.png`}>
         <h1>GET IN TOUCH</h1>
         <h5>We would love to hear from you</h5>

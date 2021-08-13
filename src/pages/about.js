@@ -6,10 +6,12 @@ import Commitment from "../Assets/about/Isa_Khan_v02.png"
 import Mission from "../Assets/about/LMG_041_v02.png"
 import Team from "../components/ourTeam"
 import Client from "../components/Client"
+import SEO from "../components/SEO"
 
 const about = () => {
   return (
     <Layout>
+      <SEO title="About" description="About Page" />
       <AboutHeader img={VaraTech}>
         <h1>ABOUT US</h1>
       </AboutHeader>

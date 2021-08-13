@@ -1,9 +1,11 @@
 import React from "react"
 import Layout from "../components/Layout"
 import styled from "styled-components"
+import SEO from "../components/SEO"
 const solution = () => {
   return (
     <Layout>
+      <SEO title="Solutions" description="Solutions Page" />
       <AboutHeader img={`../solution.png`}>
         <h1>TECHNOLOGY ENABLED SOLUTIONS</h1>
         <h5>How Varaha can help preserve the cultural heritage</h5>

@@ -5,10 +5,12 @@ import Layout from "../components/Layout"
 import { graphql, Link } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import slugify from "slugify"
+import SEO from "../components/SEO"
 
 const work = ({ data }) => {
   return (
     <Layout>
+      <SEO title="Work" description="Work Page" />
       <AboutHeader img={`../solution.png`}>
         <h1>OUR WORK</h1>
         <h5>Solutions Powered by Varaha</h5>

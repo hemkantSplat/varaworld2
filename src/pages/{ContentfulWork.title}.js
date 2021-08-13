@@ -7,6 +7,7 @@ import "slick-carousel/slick/slick-theme.css"
 import Slider from "react-slick"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { IoIosArrowForward, IoIosArrowBack } from "react-icons/all"
+import SEO from "../components/SEO"
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props
@@ -76,6 +77,7 @@ const workTemplate = ({ data }) => {
   }
   return (
     <Layout>
+      <SEO title="Work" description="Work Template" />
       <WorkHeader img={data.contentfulWork.workintro.file.url}>
         <h2>{data.contentfulWork.title}</h2>
       </WorkHeader>
