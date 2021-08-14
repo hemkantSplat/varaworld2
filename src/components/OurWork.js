@@ -13,17 +13,18 @@ const OurWork = () => {
       work: allContentfulWork(sort: { fields: order }) {
         nodes {
           workfront {
-            title
             gatsbyImageData(
               placeholder: BLURRED
               layout: FULL_WIDTH
               formats: WEBP
             )
           }
+          title
         }
       }
     }
   `)
+
   return (
     <WorkContainer>
       <h1>Our Work</h1>
@@ -59,6 +60,7 @@ const OurWork = () => {
         </Link> */}
         {data.work.nodes.map((item, index) => {
           const image = getImage(item.workfront)
+          console.log(item)
           return (
             <Link to="/work" key={index}>
               <div className="work">
