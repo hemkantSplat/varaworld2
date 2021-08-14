@@ -1,14 +1,14 @@
 import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
-import Logo from "../Assets/VarahaLogo_white.png"
+// import Logo from "../Assets/VarahaLogo_white.png"
 import { FiAlignJustify } from "react-icons/all"
 
 const Navbar = ({ openSidebar }) => {
   return (
     <Nav>
       <div className="nav-center">
-        <img src={Logo} alt="logo" />
+        <img src={`../VarahaLogo_white.png`} alt="logo" />
         <div className="nav-links">
           <NavLink to="/" activeStyle={{ borderBottom: "2px solid #ffffff" }}>
             Home

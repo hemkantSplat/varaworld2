@@ -1,8 +1,8 @@
 import React from "react"
 import styled from "styled-components"
-import FooterLogo from "../Assets/footer/VTL_Logo_white.png"
-import StartUpIndia from "../Assets/footer/Startup_India_Logo.png"
-import MakeInIndia from "../Assets/footer/Make_In_India_Logo.png"
+// import FooterLogo from "../Assets/footer/VTL_Logo_white.png"
+// import StartUpIndia from "../Assets/footer/Startup_India_Logo.png"
+// import MakeInIndia from "../Assets/footer/Make_In_India_Logo.png"
 import {
   FaInstagram,
   FaLinkedin,
@@ -20,7 +20,7 @@ const Footer = () => {
     <FooterContainer>
       <div className="footer-center">
         <div className="first-container">
-          <img src={FooterLogo} alt="footerLogo" />
+          <img src={`../footer/VTL_Logo_white.png`} alt="footerLogo" />
           <div className="social-icons-container">
             <h4>Stay In Touch</h4>
             <div className="social-icons">
@@ -64,8 +64,8 @@ const Footer = () => {
           </div>
         </div>
         <div className="second-container">
-          <img src={StartUpIndia} alt="startUpIndia" />
-          <img src={MakeInIndia} alt="MakeInIndia" />
+          <img src={`../footer/Startup_India_Logo.png`} alt="startUpIndia" />
+          <img src={`../footer/Make_In_India_Logo.png`} alt="MakeInIndia" />
         </div>
       </div>
     </FooterContainer>

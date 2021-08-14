@@ -1,9 +1,9 @@
 import React from "react"
 import styled from "styled-components"
-import Video from "../Assets/Untitled.mp4"
+// import Video from "../Assets/Untitled.mp4"
 import AliceCarousel from "react-alice-carousel"
 import "react-alice-carousel/lib/alice-carousel.css"
-import HeroBackground from "../Assets/heroBackground.png"
+// import HeroBackground from "../Assets/heroBackground.png"
 
 const items = [
   <div
@@ -55,9 +55,9 @@ const Hero = () => {
   return (
     <HeroContainer>
       <div className="video-container">
-        <img src={`../heroBackground.png`} alt="heroImage" />
+        <img src={`../hero/heroBackground.png`} alt="heroImage" />
         <video autoPlay muted loop>
-          <source src={Video} type="video/mp4" />
+          <source src={`../hero/Untitled.mp4`} type="video/mp4" />
         </video>
         <AliceCarousel
           autoPlay

@@ -1,11 +1,11 @@
 import React from "react"
 import styled from "styled-components"
-import Hemkant from "../Assets/team/Hemkant_Tripathi.png"
-import Hitesh from "../Assets/team/Hitesh_Kumar.png"
-import Divya from "../Assets/team/Divya_Narain.png"
-import Brijesh from "../Assets/team/Brijesh_Mor.png"
-import Aishwarya from "../Assets/team/Aishwarya_Mhaske.png"
-import Sayan from "../Assets/team/Sayan_Sinha.png"
+// import Hemkant from "../Assets/team/Hemkant_Tripathi.png"
+// import Hitesh from "../Assets/team/Hitesh_Kumar.png"
+// import Divya from "../Assets/team/Divya_Narain.png"
+// import Brijesh from "../Assets/team/Brijesh_Mor.png"
+// import Aishwarya from "../Assets/team/Aishwarya_Mhaske.png"
+// import Sayan from "../Assets/team/Sayan_Sinha.png"
 import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
@@ -125,42 +125,42 @@ const OurTeam = () => {
         /> */}
         <Slider {...settings}>
           <div className="team">
-            <img src={Hemkant} alt="hemkant" />
+            <img src={`../team/Hemkant_Tripathi.png`} alt="hemkant" />
             <div className="team-content">
               <h2>Hemkant Tripathi</h2>
               <h4>Co-founder</h4>
             </div>
           </div>
           <div className="team">
-            <img src={Hitesh} alt="hitesh" />
+            <img src={`../team/Hitesh_Kumar.png`} alt="hitesh" />
             <div className="team-content">
               <h2>Hitesh Kumar</h2>
               <h4>Co-founder</h4>
             </div>
           </div>
           <div className="team">
-            <img src={Divya} alt="Divya" />
+            <img src={`../team/Divya_Narain.png`} alt="Divya" />
             <div className="team-content">
               <h2>Divya Narain</h2>
               <h4>Asst. Manager, Museum Projects</h4>
             </div>
           </div>
           <div className="team">
-            <img src={Brijesh} alt="brijesh" />
+            <img src={`../team/Brijesh_Mor.png`} alt="brijesh" />
             <div className="team-content">
               <h2>Brijesh Mor</h2>
               <h4>Head, 3D Technology Solutions</h4>
             </div>
           </div>
           <div className="team">
-            <img src={Aishwarya} alt="aishwarya" />
+            <img src={`../team/Aishwarya_Mhaske.png`} alt="aishwarya" />
             <div className="team-content">
               <h2>Aishwarya Mhaske</h2>
               <h4>Researcher</h4>
             </div>
           </div>
           <div className="team">
-            <img src={Sayan} alt="sayan" />
+            <img src={`../team/Sayan_Sinha.png`} alt="sayan" />
             <div className="team-content">
               <h2>Sayan Sinha</h2>
               <h4>Researcher</h4>

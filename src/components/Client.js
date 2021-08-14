@@ -1,18 +1,24 @@
 import React from "react"
 import styled from "styled-components"
-import BiharMuseum from "../Assets/client/bihar-museum-logo-big.png"
-import IndianMuseum from "../Assets/client/Indian_Museum_Kolkata_Logo.png"
-import MinistryOfCulture from "../Assets/client/Ministry_of_Culture_Logo.png"
-import NMLogo from "../Assets/client/NM_Logo.png"
+// import BiharMuseum from "../Assets/client/bihar-museum-logo-big.png"
+// import IndianMuseum from "../Assets/client/Indian_Museum_Kolkata_Logo.png"
+// import MinistryOfCulture from "../Assets/client/Ministry_of_Culture_Logo.png"
+// import NMLogo from "../Assets/client/NM_Logo.png"
 const Client = () => {
   return (
     <ClientContainer>
       <h1>Our Clients</h1>
       <div className="client-center">
-        <img src={NMLogo} alt="NMLogo" />
-        <img src={MinistryOfCulture} alt="Ministryofculture" />
-        <img src={IndianMuseum} alt="IndianMuseum" />
-        <img src={BiharMuseum} alt="biharMuseum" />
+        <img src={`../client/NM_Logo.png`} alt="NMLogo" />
+        <img
+          src={`../client/Ministry_of_Culture_Logo.png`}
+          alt="Ministryofculture"
+        />
+        <img
+          src={`../client/Indian_Museum_Kolkata_Logo.png`}
+          alt="IndianMuseum"
+        />
+        <img src={`../client/bihar-museum-logo-big.png`} alt="biharMuseum" />
       </div>
     </ClientContainer>
   )

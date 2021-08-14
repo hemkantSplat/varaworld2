@@ -1,9 +1,9 @@
 import React from "react"
 import Layout from "../components/Layout"
 import styled from "styled-components"
-import VaraTech from "../Assets/about/About_Page_Introduction_Image.png"
-import Commitment from "../Assets/about/Isa_Khan_v02.png"
-import Mission from "../Assets/about/LMG_041_v02.png"
+// import VaraTech from "../Assets/about/About_Page_Introduction_Image.png"
+// import Commitment from "../Assets/about/Isa_Khan_v02.png"
+// import Mission from "../Assets/about/LMG_041_v02.png"
 import Team from "../components/ourTeam"
 import Client from "../components/Client"
 import SEO from "../components/SEO"
@@ -12,11 +12,14 @@ const about = () => {
   return (
     <Layout>
       <SEO title="About" description="About Page" />
-      <AboutHeader img={VaraTech}>
+      <AboutHeader img={`../about/About_Page_Introduction_Image.png`}>
         <h1>ABOUT US</h1>
       </AboutHeader>
       <AboutContentContainerFirst>
-        <img src={VaraTech} alt="varaTech" />
+        <img
+          src={`../about/About_Page_Introduction_Image.png`}
+          alt="varaTech"
+        />
         <div className="contents">
           <h4>Varaha Tech Labs</h4>
           <p>
@@ -31,7 +34,7 @@ const about = () => {
         </div>
       </AboutContentContainerFirst>
       <AboutContentContainerSecond>
-        <img src={Commitment} alt="commitment" />
+        <img src={`../about/Isa_Khan_v02.png`} alt="commitment" />
         <div className="contents">
           <h4>Commitment</h4>
           <p>
@@ -43,7 +46,7 @@ const about = () => {
         </div>
       </AboutContentContainerSecond>
       <AboutContentContainerThird>
-        <img src={Mission} alt="mission" />
+        <img src={`../about/LMG_041_v02.png`} alt="mission" />
         <div className="contents">
           <h4>Mission</h4>
           <p>

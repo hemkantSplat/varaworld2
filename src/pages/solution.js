@@ -6,14 +6,14 @@ const solution = () => {
   return (
     <Layout>
       <SEO title="Solutions" description="Solutions Page" />
-      <AboutHeader img={`../solution.png`}>
+      <AboutHeader img={`../solutions/solution.png`}>
         <h1>TECHNOLOGY ENABLED SOLUTIONS</h1>
         <h5>How Varaha can help preserve the cultural heritage</h5>
       </AboutHeader>
       <Wrapper>
         <AboutCenter>
           <div className="service" style={{ width: "300px" }}>
-            <img src={`../digitisation.svg`} alt="digitisation" />
+            <img src={`../solutions/digitisation.svg`} alt="digitisation" />
             <h5>Fast and accurate 3D/2D Digitisation</h5>
             <p>
               With extensive experience and robust technology backbone, Varaha
@@ -22,7 +22,7 @@ const solution = () => {
             </p>
           </div>
           <div className="service" style={{ width: "300px" }}>
-            <img src={`../digitalRepo.svg`} alt="digitalrepo" />
+            <img src={`../solutions/digitalRepo.svg`} alt="digitalrepo" />
             <h5>Enhanced tools to create Digital Repositories</h5>
             <p>
               By managing the data output in many instantly usable formats,
@@ -31,7 +31,10 @@ const solution = () => {
             </p>
           </div>
           <div className="service" style={{ width: "300px" }}>
-            <img src={`../centralizeddatabase.svg`} alt="centralizeddatabase" />
+            <img
+              src={`../solutions/centralizeddatabase.svg`}
+              alt="centralizeddatabase"
+            />
             <h5>Centralized Database for museums and heritage collections</h5>
             <p>
               Varaha brings together the highly scattered and lesser known
@@ -40,7 +43,7 @@ const solution = () => {
             </p>
           </div>
           <div className="service" style={{ width: "300px" }}>
-            <img src={`../tools.svg`} alt="tools" />
+            <img src={`../solutions/tools.svg`} alt="tools" />
             <h5>Tools for learning and collaborative research</h5>
             <p>
               By intelligently documenting the overwhelming amount of metadata
@@ -50,7 +53,7 @@ const solution = () => {
             </p>
           </div>
           <div className="service" style={{ width: "300px" }}>
-            <img src={`../Virtual_Museum.svg`} alt="virtualMuseum" />
+            <img src={`../solutions/Virtual_Museum.svg`} alt="virtualMuseum" />
             <h5>
               Virtual Museum building <br /> solutions
             </h5>

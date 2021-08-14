@@ -21,31 +21,34 @@ const AboutUs = () => {
           )
         })} */}
         <div className="service" style={{ width: "300px" }}>
-          <img src={`../digitisation.svg`} alt="digitisation" />
+          <img src={`../solutions/digitisation.svg`} alt="digitisation" />
           <h5>
             Fast and accurate <br /> 3D/2D Digitisation
           </h5>
         </div>
         <div className="service" style={{ width: "300px" }}>
-          <img src={`../digitalRepo.svg`} alt="digitalrepo" />
+          <img src={`../solutions/digitalRepo.svg`} alt="digitalrepo" />
           <h5>
             Enhanced tools to create <br /> Digital Repositories
           </h5>
         </div>
         <div className="service" style={{ width: "300px" }}>
-          <img src={`../centralizeddatabase.svg`} alt="centralized-database" />
+          <img
+            src={`../solutions/centralizeddatabase.svg`}
+            alt="centralized-database"
+          />
           <h5>
             Centralized Database for museums <br /> and heritage collections
           </h5>
         </div>
         <div className="service" style={{ width: "300px" }}>
-          <img src={`../tools.svg`} alt="tools" />
+          <img src={`../solutions/tools.svg`} alt="tools" />
           <h5>
             Tools for learning and <br /> collaborative research
           </h5>
         </div>
         <div className="service" style={{ width: "300px" }}>
-          <img src={`../Virtual_Museum.svg`} alt="virtualMuseum" />
+          <img src={`../solutions/Virtual_Museum.svg`} alt="virtualMuseum" />
           <h5>
             {" "}
             Virtual Museum building <br /> solutions

@@ -11,7 +11,7 @@ const work = ({ data }) => {
   return (
     <Layout>
       <SEO title="Work" description="Work Page" />
-      <AboutHeader img={`../solution.png`}>
+      <AboutHeader img={`../solutions/solution.png`}>
         <h1>OUR WORK</h1>
         <h5>Solutions Powered by Varaha</h5>
       </AboutHeader>

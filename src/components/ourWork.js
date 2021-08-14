@@ -1,9 +1,9 @@
 import React from "react"
 import styled from "styled-components"
-import VaraMuseum from "../Assets/work/Vara Museum Repository V03.png"
-import NationalMuseum from "../Assets/work/NMV_Gallery.png"
-import BiharMuseum from "../Assets/work/BM_Homepage.png"
-import VRExperience from "../Assets/work/VR_Experiences.png"
+// import VaraMuseum from "../Assets/work/Vara Museum Repository V03.png"
+// import NationalMuseum from "../Assets/work/NMV_Gallery.png"
+// import BiharMuseum from "../Assets/work/BM_Homepage.png"
+// import VRExperience from "../Assets/work/VR_Experiences.png"
 
 import { Link } from "gatsby"
 const ourWork = () => {
@@ -15,28 +15,28 @@ const ourWork = () => {
         <Link to="/work">
           {" "}
           <div className="work">
-            <img src={VaraMuseum} alt="varaMuseum" />
+            <img src={`../work/varamuseum.png`} alt="varaMuseum" />
             <h3>Vara Museum Repository</h3>
           </div>
         </Link>
         <Link to="/work">
           {" "}
           <div className="work">
-            <img src={NationalMuseum} alt="National Museum" />
+            <img src={`../work/NMV_Gallery.png`} alt="National Museum" />
             <h3>National Museum Virtual Exhibitions</h3>
           </div>
         </Link>
         <Link to="/work">
           {" "}
           <div className="work">
-            <img src={BiharMuseum} alt="Bihar Museum" />
+            <img src={`../work/BM_Homepage.png`} alt="Bihar Museum" />
             <h3>Bihar Museum Virtual Gallery</h3>
           </div>
         </Link>
         <Link to="/work">
           {" "}
           <div className="work">
-            <img src={VRExperience} alt="VR Experience" />
+            <img src={`../work/VR_Experiences.png`} alt="VR Experience" />
             <h3>VR Experiences of Cultural spaces</h3>
           </div>
         </Link>
