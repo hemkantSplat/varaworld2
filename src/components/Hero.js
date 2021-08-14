@@ -55,7 +55,7 @@ const Hero = () => {
   return (
     <HeroContainer>
       <div className="video-container">
-        <img src={HeroBackground} alt="heroImage" />
+        <img src={`../heroBackground.png`} alt="heroImage" />
         <video autoPlay muted loop>
           <source src={Video} type="video/mp4" />
         </video>
