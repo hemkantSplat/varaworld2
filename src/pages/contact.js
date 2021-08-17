@@ -8,7 +8,7 @@ const contact = () => {
   return (
     <Layout>
       <SEO title="Contact" description="Contact Page" />
-      <AboutHeader img={`../solution.png`}>
+      <AboutHeader img={`../contact/intro.png`}>
         <h1>GET IN TOUCH</h1>
         <h5>We would love to hear from you</h5>
       </AboutHeader>

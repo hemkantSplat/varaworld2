@@ -12,7 +12,7 @@ const about = () => {
   return (
     <Layout>
       <SEO title="About" description="About Page" />
-      <AboutHeader img={`../about/About_Page_Introduction_Image.png`}>
+      <AboutHeader img={`../about/intro.png`}>
         <h1>ABOUT US</h1>
       </AboutHeader>
       <AboutContentContainerFirst>

@@ -6,7 +6,7 @@ const solution = () => {
   return (
     <Layout>
       <SEO title="Solutions" description="Solutions Page" />
-      <AboutHeader img={`../solutions/solution.png`}>
+      <AboutHeader img={`../solutions/intro.png`}>
         <h1>TECHNOLOGY ENABLED SOLUTIONS</h1>
         <h5>How Varaha can help preserve the cultural heritage</h5>
       </AboutHeader>
