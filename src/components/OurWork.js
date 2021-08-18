@@ -112,9 +112,10 @@ const WorkContainer = styled.div`
       h3 {
         position: absolute;
         bottom: 10%;
-        left: -100%;
+        left: -200%;
         color: white;
         transition: all 0.6s linear;
+        font-size: 20px;
       }
 
       &:hover img {
