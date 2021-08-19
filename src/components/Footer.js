@@ -32,7 +32,7 @@ const Footer = () => {
                 <FaFacebookF className="icon" />
               </a>
               <a
-                href="https://www.linkedin.com/company/varaha-tech-labs"
+                href="https://twitter.com/varahatechlabs"
                 target="_blank"
                 rel="noreferrer"
               >

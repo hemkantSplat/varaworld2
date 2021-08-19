@@ -285,6 +285,10 @@ const TeamContainer = styled.div`
   padding: 4rem 0;
   height: 600px;
 
+  @media screen and (max-width: 450px) {
+    height: auto;
+  }
+
   h1 {
     text-align: center;
 

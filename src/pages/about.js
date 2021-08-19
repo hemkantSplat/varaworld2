@@ -16,10 +16,7 @@ const about = () => {
         <h1>ABOUT US</h1>
       </AboutHeader>
       <AboutContentContainerFirst>
-        <img
-          src={`../about/About_Page_Introduction_Image.png`}
-          alt="varaTech"
-        />
+        <img src={`../about/first.png`} alt="varaTech" />
         <div className="contents">
           <h4>Varaha Tech Labs</h4>
           <p>
@@ -34,7 +31,7 @@ const about = () => {
         </div>
       </AboutContentContainerFirst>
       <AboutContentContainerSecond>
-        <img src={`../about/Isa_Khan_v02.png`} alt="commitment" />
+        <img src={`../about/Isa_Khan_v03.png`} alt="commitment" />
         <div className="contents">
           <h4>Commitment</h4>
           <p>
@@ -46,7 +43,7 @@ const about = () => {
         </div>
       </AboutContentContainerSecond>
       <AboutContentContainerThird>
-        <img src={`../about/LMG_041_v02.png`} alt="mission" />
+        <img src={`../about/LMG_041_v03.png`} alt="mission" />
         <div className="contents">
           <h4>Mission</h4>
           <p>
@@ -83,6 +80,7 @@ const AboutContentContainerFirst = styled.div`
   display: grid;
   height: auto;
   width: 100vw;
+  background: #212121;
   /* grid-template-columns: 50% 50%; */
 
   @media screen and (min-width: 768px) {
@@ -92,11 +90,11 @@ const AboutContentContainerFirst = styled.div`
   img {
     width: 100%;
     height: 300px;
-    object-fit: cover;
+    object-fit: contain;
 
     @media screen and (min-width: 768px) {
       height: 500px;
-      object-fit: cover;
+      object-fit: contain;
     }
     /* @media screen and (min-width: 1200px) {
       height: 100%;
