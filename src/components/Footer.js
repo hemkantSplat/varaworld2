@@ -68,6 +68,7 @@ const Footer = () => {
           <img src={`../footer/Make_In_India_Logo.png`} alt="MakeInIndia" />
         </div>
       </div>
+      <p class="copy">Varaha Techlabs LLP &copy; 2021</p>
     </FooterContainer>
   )
 }
@@ -76,7 +77,12 @@ export default Footer
 
 const FooterContainer = styled.footer`
   background: #212121;
-  padding: 3rem 0;
+  padding: 3rem 0 1rem 0;
+
+  .copy {
+    text-align: center;
+    color: #ffffff;
+  }
 
   .footer-center {
     width: 90vw;
