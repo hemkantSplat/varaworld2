@@ -47,10 +47,12 @@ const about = () => {
         <div className="contents">
           <h4>Mission</h4>
           <p>
-            Varaha is committed to create efficient solutions using the emerging
-            technology to capture, archive and document the icons of cultural
-            heritage, and make data pivotal to the conservation and knowledge
-            sharing for the future generations.
+            Our aim is to create a centralized and easy-to-use framework which
+            will make the highest quality archival data capturing possible at
+            extremely fast pace. Varaha will create an environment of
+            exploration by bringing together museums and experience centers,
+            conservation architects, educationists, researchers and cultural
+            tourism promoters on one scalable centralized platform.
           </p>
         </div>
       </AboutContentContainerThird>
