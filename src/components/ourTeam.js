@@ -81,7 +81,7 @@ const OurTeam = () => {
   const settings = {
     dots: false,
     infinite: true,
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
     speed: 1000,
@@ -152,7 +152,7 @@ const OurTeam = () => {
               <h4>Head, 3D Technology Solutions</h4>
             </div>
           </div>
-          <div className="team">
+          {/* <div className="team">
             <img src={`../team/Aishwarya_Mhaske.png`} alt="aishwarya" />
             <div className="team-content">
               <h2>Aishwarya Mhaske</h2>
@@ -165,7 +165,7 @@ const OurTeam = () => {
               <h2>Sayan Sinha</h2>
               <h4>Researcher</h4>
             </div>
-          </div>
+          </div> */}
         </Slider>
 
         {/* <div className="team">
@@ -283,7 +283,7 @@ const TeamContainer = styled.div`
 
   /* margin-top: -1rem; */
   padding: 4rem 0;
-  height: 600px;
+  height: 700px;
 
   @media screen and (max-width: 450px) {
     height: auto;
