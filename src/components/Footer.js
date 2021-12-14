@@ -60,7 +60,7 @@ const Footer = () => {
             <FaPhoneAlt /> <span>+91 96507 87318</span>
           </div>
           <div className="email">
-            <FiMail /> <span>info@varahworld.com</span>
+            <FiMail /> <span>info@varahaworld.com</span>
           </div>
         </div>
         <div className="second-container">

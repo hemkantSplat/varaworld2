@@ -17,7 +17,7 @@ const contact = () => {
           <div className="contact">
             <FiMail />
             <h5>drop a line.</h5>
-            <p>info@varahworld.com</p>
+            <p>info@varahaworld.com</p>
           </div>
           <div className="contact">
             <FaPhoneAlt />
