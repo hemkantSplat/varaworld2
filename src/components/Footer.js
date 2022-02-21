@@ -68,7 +68,7 @@ const Footer = () => {
           <img src={`../footer/Make_In_India_Logo.png`} alt="MakeInIndia" />
         </div>
       </div>
-      <p class="copy">Varaha Techlabs LLP &copy; 2021</p>
+      <p className="copy">Varaha Techlabs LLP &copy; 2021</p>
     </FooterContainer>
   )
 }
