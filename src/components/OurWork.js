@@ -6,44 +6,60 @@ import styled from "styled-components"
 // import VRExperience from "../Assets/work/VR_Experiences.png"
 // import { graphql, Link } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
-import {StaticQuery, useStaticQuery, graphql, Link } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 const OurWork = () => {
-  // const data = useStaticQuery(graphql`
-  //   {
-  //     work: allContentfulWork(sort: { fields: order }) {
-  //       nodes {
-  //         workfront {
-  //           gatsbyImageData(
-  //             placeholder: BLURRED
-  //             layout: FULL_WIDTH
-  //             formats: WEBP
-  //           )
-  //         }
-  //         title
-  //       }
-  //     }
-  //   }
-  // `)
-return (
-<StaticQuery 
- query={graphql`
- {
-   work:allContentfulWork {
-     nodes {
-       title
-       images {
-         gatsbyImageData(placeholder: TRACED_SVG, layout: FULL_WIDTH, formats: WEBP)
-       }
-     }
-   }
- }
-`}
-render={data => (
-  <WorkContainer>
-  <h1>Our Work</h1>
-  <h4>Solutions powered by Varaha</h4>
-  <div className="work-center">
-  {data.work.nodes.map((item, index) => {
+  const data = useStaticQuery(graphql`
+    {
+      work: allContentfulWork(sort: { fields: order }) {
+        nodes {
+          workfront {
+            gatsbyImageData(
+              placeholder: BLURRED
+              layout: FULL_WIDTH
+              formats: WEBP
+            )
+          }
+          title
+        }
+      }
+    }
+  `)
+
+
+  return (
+    <WorkContainer>
+      <h1>Our Work</h1>
+      <h4>Solutions powered by Varaha</h4>
+      <div className="work-center">
+        {/* <Link to="/work">
+          {" "}
+          <div className="work">
+            <img src={`../work/varamuseum.png`} alt="varaMuseum" />
+            <h3>Vara Museum Repository</h3>
+          </div>
+        </Link>
+        <Link to="/work">
+          {" "}
+          <div className="work">
+            <img src={`../work/NMV_Gallery.png`} alt="National Museum" />
+            <h3>National Museum Virtual Exhibitions</h3>
+          </div>
+        </Link>
+        <Link to="/work">
+          {" "}
+          <div className="work">
+            <img src={`../work/BM_Homepage.png`} alt="Bihar Museum" />
+            <h3>Bihar Museum Virtual Gallery</h3>
+          </div>
+        </Link>
+        <Link to="/work">
+          {" "}
+          <div className="work">
+            <img src={`../work/VR_Experiences.png`} alt="VR Experience" />
+            <h3>VR Experiences of Cultural spaces</h3>
+          </div>
+        </Link> */}
+        {data.work.nodes.map((item, index) => {
           const image = getImage(item.workfront)
           console.log(item)
           return (
@@ -58,9 +74,7 @@ render={data => (
         })}
       </div>
     </WorkContainer>
-)}
-/>
-)
+  )
 }
 
 
