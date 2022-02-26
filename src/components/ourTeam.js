@@ -10,7 +10,7 @@ import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 import "../styles/slick.css"
-// import { useStaticQuery, graphql} from "gatsby"
+import { useStaticQuery, graphql} from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 // import AliceCarousel from "react-alice-carousel"
@@ -80,19 +80,19 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
 // }
 
 const OurTeam = () => {
-//   const data = useStaticQuery(graphql`
-//   {
-//     team: allContentfulTeam(sort: {fields: updatedAt}) {
-//       nodes {
-//         name
-//         designation
-//         image {
-//           gatsbyImageData(layout: FULL_WIDTH, formats: WEBP)
-//         }
-//       }
-//     }
-//   }
-// `)
+  const data = useStaticQuery(graphql`
+  {
+    team: allContentfulTeam(sort: {fields: updatedAt}) {
+      nodes {
+        name
+        designation
+        image {
+          gatsbyImageData(layout: FULL_WIDTH, formats: WEBP)
+        }
+      }
+    }
+  }
+`)
 
   const settings = {
     dots: false,
@@ -140,7 +140,16 @@ const OurTeam = () => {
           items={items}
         /> */}
         <Slider {...settings}>
-          <div className="team">
+          {data.team.nodes.map((item, index) => {
+            return <div className="team" key={index}>
+            <GatsbyImage image={item.image.gatsbyImageData} alt={item.name} />;
+            <div className="team-content">
+              <h2>{item.name}</h2>
+              <h4>{item.designation}</h4>
+            </div>
+          </div>
+          })}
+          {/* <div className="team">
             <img src={`../team/Hemkant_Tripathi.png`} alt="hemkant" />
             <div className="team-content">
               <h2>Hemkant Tripathi</h2>
@@ -167,7 +176,7 @@ const OurTeam = () => {
               <h2>Brijesh Mor</h2>
               <h4>Head, 3D Technology Solutions</h4>
             </div>
-          </div>
+          </div> */}
           {/* <div className="team">
             <img src={`../team/Aishwarya_Mhaske.png`} alt="aishwarya" />
             <div className="team-content">
