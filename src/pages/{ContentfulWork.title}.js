@@ -113,7 +113,7 @@ const workTemplate = ({ data }) => {
         <div className="content">
           <p>
             {data.contentfulWork.content.content}{" "}
-            <a href={data.contentfulWork.url}>{data.contentfulWork.url}</a>
+            <a target="_blank" href={data.contentfulWork.url}>{data.contentfulWork.url}</a>
           </p>
         </div>
       </WorkContent>
