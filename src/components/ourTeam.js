@@ -10,7 +10,7 @@ import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 import "../styles/slick.css"
-import { useStaticQuery, graphql} from "gatsby"
+import {StaticQuery, useStaticQuery, graphql} from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 // import AliceCarousel from "react-alice-carousel"
@@ -80,19 +80,19 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
 // }
 
 const OurTeam = () => {
-  const data = useStaticQuery(graphql`
-  {
-    team: allContentfulTeam(sort: {fields: updatedAt}) {
-      nodes {
-        name
-        designation
-        image {
-          gatsbyImageData(layout: FULL_WIDTH, formats: WEBP)
-        }
-      }
-    }
-  }
-`)
+//   const data = useStaticQuery(graphql`
+//   {
+//     team: allContentfulTeam(sort: {fields: updatedAt}) {
+//       nodes {
+//         name
+//         designation
+//         image {
+//           gatsbyImageData(layout: FULL_WIDTH, formats: WEBP)
+//         }
+//       }
+//     }
+//   }
+// `)
 
   const settings = {
     dots: false,
@@ -139,6 +139,21 @@ const OurTeam = () => {
           disableButtonsControls
           items={items}
         /> */}
+    <StaticQuery
+query={graphql`
+{
+  team:allContentfulTeam {
+    nodes {
+      name
+      image {
+        gatsbyImageData(formats: WEBP, placeholder: TRACED_SVG, layout: FULL_WIDTH)
+      }
+      designation
+    }
+  }
+}
+`}
+render={data => (
         <Slider {...settings}>
           {data.team.nodes.map((item, index) => {
             return <div className="team" key={index}>
@@ -192,7 +207,8 @@ const OurTeam = () => {
             </div>
           </div> */}
         </Slider>
-
+        )}
+/>
         {/* <div className="team">
           <img src={Hemkant} alt="hemkant" />
           <div className="team-content">
