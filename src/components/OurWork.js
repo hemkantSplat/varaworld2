@@ -7,23 +7,24 @@ import styled from "styled-components"
 // import { graphql, Link } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { useStaticQuery, graphql, Link } from "gatsby"
-const OurWork = ({data}) => {
-  // const data = useStaticQuery(graphql`
-  //   {
-  //     work: allContentfulWork(sort: { fields: order }) {
-  //       nodes {
-  //         workfront {
-  //           gatsbyImageData(
-  //             placeholder: BLURRED
-  //             layout: FULL_WIDTH
-  //             formats: WEBP
-  //           )
-  //         }
-  //         title
-  //       }
-  //     }
-  //   }
-  // `)
+const OurWork = () => {
+  const data = useStaticQuery(graphql`
+    {
+      work: allContentfulWork(sort: { fields: order }) {
+        nodes {
+          workfront {
+            gatsbyImageData(
+              placeholder: BLURRED
+              layout: FULL_WIDTH
+              formats: WEBP
+            )
+          }
+          title
+        }
+      }
+    }
+  `)
+
 
   return (
     <WorkContainer>
@@ -76,22 +77,7 @@ const OurWork = ({data}) => {
   )
 }
 
-export const query = graphql`
-  {
-    work: allContentfulWork(sort: { fields: order }) {
-      nodes {
-        workfront {
-          gatsbyImageData(
-            layout: FULL_WIDTH
-            formats: WEBP
-            placeholder: TRACED_SVG
-          )
-        }
-        title
-      }
-    }
-  }
-`
+
 
 export default OurWork
 

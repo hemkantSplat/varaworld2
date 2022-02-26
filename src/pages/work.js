@@ -7,7 +7,8 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import slugify from "slugify"
 import SEO from "../components/SEO"
 
-const work = ({ data }) => {
+const work = ({data}) => {
+  
   return (
     <Layout>
       <SEO title="Work" description="Work Page" />
