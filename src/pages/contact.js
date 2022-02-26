@@ -1,7 +1,9 @@
 import React from "react"
 import Layout from "../components/Layout"
 import styled from "styled-components"
-import { FaPhoneAlt, FiMail, MdLocationOn } from "react-icons/all"
+import { FaPhoneAlt} from "react-icons/fa"
+import { FiMail } from "react-icons/fi"
+import {MdLocationOn} from "react-icons/md"
 import SEO from "../components/SEO"
 
 const contact = () => {

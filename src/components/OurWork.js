@@ -6,9 +6,31 @@ import styled from "styled-components"
 // import VRExperience from "../Assets/work/VR_Experiences.png"
 // import { graphql, Link } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
-import { useStaticQuery, graphql, Link } from "gatsby"
+import { StaticQuery, useStaticQuery, graphql, Link } from "gatsby"
 const OurWork = () => {
-  const data = useStaticQuery(graphql`
+  // const data = useStaticQuery(graphql`
+  //   {
+  //     work: allContentfulWork(sort: { fields: order }) {
+  //       nodes {
+  //         workfront {
+  //           gatsbyImageData(
+  //             placeholder: BLURRED
+  //             layout: FULL_WIDTH
+  //             formats: WEBP
+  //           )
+  //         }
+  //         title
+  //       }
+  //     }
+  //   }
+  // `)
+
+
+  return (
+    <WorkContainer>
+      <h1>Our Work</h1>
+      <h4>Solutions powered by Varaha</h4>
+      <StaticQuery query={graphql`
     {
       work: allContentfulWork(sort: { fields: order }) {
         nodes {
@@ -23,13 +45,8 @@ const OurWork = () => {
         }
       }
     }
-  `)
-
-
-  return (
-    <WorkContainer>
-      <h1>Our Work</h1>
-      <h4>Solutions powered by Varaha</h4>
+  `}
+    render={data => (
       <div className="work-center">
         {/* <Link to="/work">
           {" "}
@@ -73,6 +90,8 @@ const OurWork = () => {
           )
         })}
       </div>
+    )}
+    />
     </WorkContainer>
   )
 }

@@ -6,7 +6,7 @@ import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 // import Slider from "react-slick"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
-import { IoIosArrowForward, IoIosArrowBack } from "react-icons/all"
+import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io"
 import SEO from "../components/SEO"
 
 import "bootstrap/dist/css/bootstrap.css"

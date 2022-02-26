@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
 // import Logo from "../Assets/VarahaLogo_white.png"
-import { FiAlignJustify } from "react-icons/all"
+import { FiAlignJustify } from "react-icons/fi"
 
 const Navbar = ({ openSidebar }) => {
   return (

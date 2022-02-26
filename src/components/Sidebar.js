@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import { IoMdClose } from "react-icons/all"
+import { IoMdClose } from "react-icons/io"
 
 const Sidebar = ({ active, closeSidebar }) => {
   return (

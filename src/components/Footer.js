@@ -7,10 +7,10 @@ import {
   FaInstagram,
   FaLinkedin,
   FaPhoneAlt,
-  FiMail,
   FaFacebookF,
   FaTwitter,
-} from "react-icons/all"
+} from "react-icons/fa"
+import {FiMail} from "react-icons/fi"
 // import { AiFillTwitterCircle } from "react-icons/Ai"
 // import { FaPhoneAlt } from "react-icons/Fa"
 // import { FiMail } from "react-icons/Fi"
