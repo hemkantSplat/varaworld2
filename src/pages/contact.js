@@ -24,7 +24,7 @@ const contact = () => {
           <div className="contact">
             <FaPhoneAlt />
             <h5>call us.</h5>
-            <p>+91 96507 87318</p>
+            <p>+91 99101 14975</p>
           </div>
           <div className="contact">
             <MdLocationOn />
