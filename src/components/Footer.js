@@ -57,7 +57,7 @@ const Footer = () => {
         </div>
         <div className="third-container">
           <div className="contact">
-            <FaPhoneAlt /> <span>+91 99101 14975</span>
+            <FaPhoneAlt /> <span>+91 85955 83144</span>
           </div>
           <div className="email">
             <FiMail /> <span>info@varahaworld.com</span>
